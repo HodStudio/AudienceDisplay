@@ -88,6 +88,10 @@ function sendToAudienceDisplay(elem) {
 
     var youtubeElement = $(elem);
     while (!youtubeElement.is("yt-live-chat-text-message-renderer")) {
+        if (youtubeElement.is("body")) {
+            alert("Select a valid comment to send to Audience Display.");
+            return;
+        }
         youtubeElement = youtubeElement.parent();
     }
 
