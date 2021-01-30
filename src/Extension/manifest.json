@@ -1,7 +1,7 @@
 {
   "name": "Audience Display",
   "description": "Extension to work with the Audience Display Server to show live comments in the OBS and similar apps",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "permissions": [
     "contextMenus",
     "tabs",
@@ -15,7 +15,7 @@
   },
   "content_scripts": [
     {
-      "matches": [ "http://*/*", "https://*/*" ],
+      "matches": [ "https://www.youtube.com/live_chat?*" ],
       "js": [ "jquery.min.js", "signalr.min.js", "audience-display.content.js" ]
     }
   ],
