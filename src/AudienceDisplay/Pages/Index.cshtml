@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    Layout = "";
+    Layout = string.Empty;
 }
 
 <!DOCTYPE html>
@@ -15,12 +15,12 @@
 <body>
     <div id="template">
         <div class="container" id="uniqueIdentifier">
-            <img class="picture fl" src="{IMAGE_SRC}" alt="{AUTHOR_NAME}'s name">
+            <img class="picture fl" src="{IMAGE_SRC}" alt="{AUTHOR_NAME}'s name" style="border-color: @(Model.ColorConfiguration.Picture.Border)">
             <div class="content fl">
-                <div class="title">
+                <div class="title" style="background-color: @(Model.ColorConfiguration.Author.Background); border-color: @(Model.ColorConfiguration.Author.Border); color: @(Model.ColorConfiguration.Author.Text);">
                     <p>{AUTHOR_NAME}</p>
                 </div>
-                <div class="comment">
+                <div class="comment" style="background-color: @(Model.ColorConfiguration.Comment.Background); color: @(Model.ColorConfiguration.Comment.Text);">
                     <p>{MESSAGE}</p>
                 </div>
             </div>
