@@ -72,3 +72,7 @@ body {
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
         }
+
+    #uniqueIdentifier .hidden {
+        display: none;
+    }
