@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudienceDisplayServer", "src\AudienceDisplay\AudienceDisplay.csproj", "{701D6ABC-07C6-4515-AC4B-FC3FE0AB0DCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extension", "Extension", "{06F2A1C4-893F-4CCF-8B16-CFABE4D2A3A7}"
+	ProjectSection(SolutionItems) = preProject
+		src\Extension\audience-display.background.js = src\Extension\audience-display.background.js
+		src\Extension\audience-display.content.js = src\Extension\audience-display.content.js
+		src\Extension\manifest.json = src\Extension\manifest.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{701D6ABC-07C6-4515-AC4B-FC3FE0AB0DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701D6ABC-07C6-4515-AC4B-FC3FE0AB0DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701D6ABC-07C6-4515-AC4B-FC3FE0AB0DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701D6ABC-07C6-4515-AC4B-FC3FE0AB0DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D8A4118-2C6B-4040-A36B-C63EA2B2755B}
+	EndGlobalSection
+EndGlobal

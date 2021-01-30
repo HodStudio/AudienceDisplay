@@ -1,0 +1,92 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    display: block;
+    margin: 8px;
+}
+
+/*Support classes*/
+
+#template {
+    display: none;
+}
+
+#uniqueIdentifier * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+
+/*Size*/
+
+#uniqueIdentifier {
+    width: 800px;
+    margin: auto;
+}
+
+    #uniqueIdentifier .picture {
+        width: 120px;
+        height: 120px;
+        box-shadow: 5px 0px 10px 0px;
+        border-radius: 50%;
+        border-width: 3px;
+        border-style: solid;
+        position: absolute;
+    }
+
+    #uniqueIdentifier .content .title {
+        min-width: 50%;
+        max-width: 740px;
+        margin-left: 60px;
+        display: inline-block;
+        border-top-right-radius: 7em;
+        padding: 7px 30px 7px 85px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+        #uniqueIdentifier .content .title p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+        }
+
+
+    #uniqueIdentifier .content .comment {
+        margin-left: 60px;
+        padding: 7px 7px 7px 85px;
+        line-height: 25px;
+        height: 80px;
+        overflow: hidden;
+    }
+
+        #uniqueIdentifier .content .comment p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+
+    /*Colors*/
+
+    #uniqueIdentifier .picture {
+        border-color: #fff;
+    }
+
+    #uniqueIdentifier .content .title {
+        background-color: #000144;
+        border-color: #000144;
+        color: #fff;
+    }
+
+    #uniqueIdentifier .content .comment {
+        background-color: #000084;
+        color: #fff;
+    }

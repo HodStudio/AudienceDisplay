@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudienceDisplayServer - Viewer</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="template">
+        <div class="container" id="uniqueIdentifier">
+            <img class="picture fl" src="{IMAGE_SRC}" alt="{AUTHOR_NAME}'s name">
+            <div class="content fl">
+                <div class="title">
+                    <p>{AUTHOR_NAME}</p>
+                </div>
+                <div class="comment">
+                    <p>{MESSAGE}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="showMessage"></div>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/jquery/jquery.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

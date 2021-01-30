@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>CussaMitre</Authors>
+    <Company>HodStuiod</Company>
+    <PackageIcon>audience-display.logo.png</PackageIcon>
+    <UserSecretsId>84ceb0c9-18ea-458a-85aa-7cbc256b5093</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Extension\images\audience-display.logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

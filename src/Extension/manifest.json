@@ -1,0 +1,32 @@
+{
+  "name": "Audience Display",
+  "description": "Extension to work with the Audience Display Server to show live comments in the OBS and similar apps",
+  "version": "0.0.1",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "https://www.youtube.com/live_chat?*"
+  ],
+  "background": {
+    "scripts": [
+      "jquery.min.js",
+      "audience-display.background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "js": [ "jquery.min.js", "signalr.min.js", "audience-display.content.js" ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "32": "images/audience-display.default.png"
+    },
+    "default_title": "Choose comment to Send to Heimdall"
+  },
+  "icons": {
+    "128": "images/audience-display.logo.png"
+  },
+  "manifest_version": 2
+}
