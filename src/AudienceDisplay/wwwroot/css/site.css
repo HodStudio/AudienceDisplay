@@ -73,6 +73,11 @@ body {
             -webkit-box-orient: vertical;
         }
 
+        #uniqueIdentifier .content .comment p img {
+            height: 25px;
+            margin-left: 5px;
+        }
+
     #uniqueIdentifier .hidden {
         display: none;
     }
