@@ -47,10 +47,22 @@ In case you want to specify the colors, just use the environment variables to do
 
 `docker run -p 40000:40000 -e ASPNETCORE_URLS=http://+:40000 -e Urls=http://+:40000 -e ColorConfiguration:Author:Background=#0F0 hodstudio/audience-display`
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## 🤝 Contributing
 
-## Sponsoring the project
-Contact me! Or...
+Contributions, issues and feature requests are welcome.<br />
+Feel free to check [issues page](https://github.com/hodstudio/audience-display/issues) if you want to contribute.<br />
+[Check the contributing guide](./CONTRIBUTING.md).<br />
+
+## Author
+
+👤 **Cussa (Mitre) de Souza**
+
+- Twitter: [@cussamitre](https://twitter.com/cussamitre)
+- Github: [@cussa](https://github.com/cussa)
+- Telegram: [@cussamitre](https://t.me/cussamitre)
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
 
 <a href="https://www.buymeacoffee.com/cussa" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;"></a>
