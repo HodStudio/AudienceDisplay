@@ -5,7 +5,8 @@
   "permissions": [
     "contextMenus",
     "tabs",
-    "https://www.youtube.com/live_chat?*"
+    "https://www.youtube.com/live_chat?*",
+    "storage"
   ],
   "background": {
     "scripts": [
@@ -24,6 +25,10 @@
       "32": "images/audience-display.default.png"
     },
     "default_title": "Choose comment to Send to Heimdall"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
   },
   "icons": {
     "128": "images/audience-display.logo.png"

@@ -4,7 +4,11 @@ var lastElem = null;
 var lastElemStyle = null;
 var currentId = null;
 var connection = null;
-var port = null; //56839;
+
+var serverAddress = null;
+chrome.storage.sync.get("serverAddress", function (obj) {
+    serverAddress = obj.serverAddress;
+});
 
 /**
  * Given and element and an array of CSS style names, returns a dictionary
@@ -111,10 +115,7 @@ function sendToAudienceDisplay(elem) {
 
 function sendMessage(newId, author, image, message) {
     if (connection == null) {
-        if (port == null) {
-            port = prompt("Specify the port that Audience Display Server is running");
-        }
-        connection = new signalR.HubConnectionBuilder().withUrl(`http://localhost:${port}/listen`).build();
+        connection = new signalR.HubConnectionBuilder().withUrl(`${serverAddress}/listen`).build();
     }
 
     if (connection.connectionState === "Disconnected") {

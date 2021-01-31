@@ -140,3 +140,12 @@ chrome.tabs.onRemoved.addListener(function (tabid) {
 chrome.tabs.onSelectionChanged.addListener(function (tabid) {
     setActive(tabid, active[tabid]);
 });
+
+chrome.runtime.onInstalled.addListener(function (details) {
+    if (details.reason !== "install") {// && details.reason !== "update") {
+        return;
+    }
+    chrome.tabs.create({ url: `chrome://extensions/?options=${chrome.runtime.id}` }, function (tab) {
+        console.log("options page opened");
+    });
+});
