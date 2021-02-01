@@ -60,7 +60,7 @@ Feel free to check [issues page](https://github.com/hodstudio/audience-display/i
 - Github: [@cussa](https://github.com/cussa)
 - Telegram: [@cussamitre](https://t.me/cussamitre)
 
-## Contributions
+## Contributors
 
 👤 **Lincoln Nascimento**
 
