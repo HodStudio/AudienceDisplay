@@ -57,9 +57,14 @@ Feel free to check [issues page](https://github.com/hodstudio/audience-display/i
 
 👤 **Cussa (Mitre) de Souza**
 
-- Twitter: [@cussamitre](https://twitter.com/cussamitre)
 - Github: [@cussa](https://github.com/cussa)
 - Telegram: [@cussamitre](https://t.me/cussamitre)
+
+## Contributions
+
+👤 **Lincoln Nascimento**
+
+- Github: [@this-lincoln](https://github.com/this-lincoln)
 
 ## Show your support
 
